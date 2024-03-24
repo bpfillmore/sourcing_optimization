@@ -1,7 +1,3 @@
-Sure, I can create a tutorial that explains the purpose of the functions, why they were created, and how to use them. This tutorial can certainly be structured to serve as a README file for your project.
-
----
-
 # Sourcing Optimization Model Tutorial
 
 ## Overview
