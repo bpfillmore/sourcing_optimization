@@ -2,6 +2,14 @@
 
 This model is designed to optimize the sourcing process by selecting the best suppliers based on cost, location, and predefined constraints, then allocating units to factories accordingly.
 
+## Background
+
+The use case here is developing a product that simplifies the project of optimizing resource allocation for a vendor. This particular vendor runs pricing for input raw materials twice per year, negotiating on raw materials in several distinct categories across hundreds of external suppliers. This process is typically a self-contained RFQ - with external suppliers submitting their prices for raw materials, allowing the primary vendor to compare pricing options. 
+
+Once this information is collected and aggregated, the vendor has to go through the process of deciding what volume to allocate to different factories, and from which external suppliers. This is a balancing act, primarily between cost of materials from suppliers, and regionality (local-for-local). It's quite common for suppliers with less competitive prices to still be awarded business just because of their proximity to preferred factories, allowing a local-for-local pairing.   The function takes into consideration target volume (internal vendor figures indicating preferred suppliers), factory demand (volume the factories are capable of producing) and prices. 
+
+Using this, and considering imputed hard constraints, the model is able to generate a best-case, optimized allocation of items between suppliers and factories.
+
 ## Overview
 
 The model processes data through several stages:
