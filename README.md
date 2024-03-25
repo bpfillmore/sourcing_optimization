@@ -79,4 +79,21 @@ After running the allocation process, perform an analysis to understand:
 - Which vendors are selected as suppliers and their cost implications.
 - Adherence to local-for-local preferences and other business rules.
 
+## Detailed Function Logic
+
+Preprocess Data: Filters out any data not meeting the specified constraints.
+Select Winning Supplier: Determines the most cost-effective supplier for each item, preferring local suppliers to align with the local-for-local strategy.
+Allocate to Factories: Distributes the items to factories based on the selected suppliers and the factories' demand, respecting the target volume constraints.
+
+## Data Structure
+
+Vendors: Contains vendor IDs and their corresponding countries.
+Items: Lists items with their IDs and associated types.
+Factories: Includes factory IDs, countries, and demand volumes.
+Constraints: Specifies pairs of items and factories that are unacceptable for allocation.
+
+## Notes
+
+Ensure all data is correctly loaded and preprocessed before running the allocation functions.
+The model can be adjusted to accommodate additional constraints and preferences as needed.
 ---
