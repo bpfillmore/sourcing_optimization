@@ -93,7 +93,6 @@ Factories: Includes factory IDs, countries, and demand volumes.
 Constraints: Specifies pairs of items and factories that are unacceptable for allocation.
 
 ## Notes
-
-Ensure all data is correctly loaded and preprocessed before running the allocation functions.
-The model can be adjusted to accommodate additional constraints and preferences as needed.
+- Ensure all data is correctly loaded and preprocessed before running the allocation functions.
+- The model can be adjusted to accommodate additional constraints and preferences as needed.
 ---
